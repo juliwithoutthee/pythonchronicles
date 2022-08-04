@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'tutorial.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'todo',  # db name todo
+        'USER': 'postgres',
+        'PASSWORD': 'NULL',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
