@@ -31,3 +31,6 @@ class LinkedList:
             yield node
             node = node.next
 
+    def add_first(self, node):
+        node.next = self.head
+        self.head = node
