@@ -25,4 +25,9 @@ class LinkedList:
         nodes.append("None")
         return " -> ".join(nodes)
 
+    def __iter__(self):
+        node = self.head
+        while node is not None:
+            yield node
+            node = node.next
 
