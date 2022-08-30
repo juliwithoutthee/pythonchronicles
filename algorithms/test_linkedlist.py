@@ -9,3 +9,7 @@ class TestLinkedList:
 
     def test_add_last(linkedlist):
         assert LinkedList.add_last()
+
+    def test_add_before(linkedlist):
+        assert LinkedList.add_before
+    
