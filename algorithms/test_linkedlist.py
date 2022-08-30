@@ -13,3 +13,6 @@ class TestLinkedList:
     def test_add_before(linkedlist):
         assert LinkedList.add_before
     
+    def test_add_after(linkedlist):
+        assert LinkedList.add_after
+
