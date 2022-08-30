@@ -16,3 +16,5 @@ class TestLinkedList:
     def test_add_after(linkedlist):
         assert LinkedList.add_after
 
+    def test_remove(linkedlist):
+        assert LinkedList.remove(linkedlist)
