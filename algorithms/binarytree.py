@@ -53,3 +53,15 @@ class TreeNode:
             return TreeNode.search(searchValue, node.leftChild)
         else: 
             return TreeNode.search(searchValue, node.rightChild)
+
+    def insert(value, node):
+        if value < node.value:
+            if node.leftChild is None:
+                node.leftChild = TreeNode(value)
+            else:
+                TreeNode.insert(value, node.leftChild)
+        elif value > node.value:
+            if node.rightChild is None:
+                node.rightChild = TreeNode(value)
+            else: 
+                TreeNode.insert(value, node.rightChild)
