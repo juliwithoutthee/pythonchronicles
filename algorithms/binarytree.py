@@ -37,3 +37,11 @@ print("\nIn order Traversal: ", end="")
 root.traverseInOrder()
 print("\nPost order Traversal: ", end="")
 root.traversePostOrder()
+
+
+
+class TreeNode:
+    def __init__(self, value, left=None, right=None):
+        self.value = value
+        self.leftChild = left
+        self.rightChild = right
