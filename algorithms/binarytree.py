@@ -45,3 +45,11 @@ class TreeNode:
         self.value = value
         self.leftChild = left
         self.rightChild = right
+
+    def search(searchValue, node):
+        if node is None or node.value == searchValue:
+            return node
+        elif searchValue < node.value:
+            return TreeNode.search(searchValue, node.leftChild)
+        else: 
+            return TreeNode.search(searchValue, node.rightChild)
