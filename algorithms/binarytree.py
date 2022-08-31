@@ -1,4 +1,7 @@
 
+from tomlkit import value
+
+
 class Node: 
     def __init__(self, value):
         self.left = None 
@@ -65,3 +68,26 @@ class TreeNode:
                 node.rightChild = TreeNode(value)
             else: 
                 TreeNode.insert(value, node.rightChild)
+
+    def delete(valueToDelete, node):
+        if node is None:
+            return None
+        elif valueToDelete < node.value:
+            node.leftChild = TreeNode.delete(valueToDelete, node.leftChild)
+            return node
+        elif valueToDelete == node.value:
+            if node.leftChild is None: 
+                return node.rightChild
+            elif node.rightChild is None:
+                return node.leftChild
+            else: 
+                node.rightChild = TreeNode.lift(node.rightChild, node)
+                return node
+
+    def lift(node, nodeToDelete):
+        if node.leftChild:
+            node.leftChild = TreeNode.lift(node.leftChild, nodeToDelete)
+            return node
+        else: 
+            nodeToDelete.value = node.value
+            return node.rightChild
