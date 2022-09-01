@@ -2,9 +2,11 @@
 # return the lowest common ancestor of v1 and v2 in binary search tree 
 # v1 v2 are int and exist in the tree 
 # Check for null? 
-# No duplicate numbers
+# No duplicate numbers 
+# -1000 < n < 1000, where n is node.value
 # Depth First Search 
-
+# size of the tree is n 
+# time complexity 
 
 
 class Solution: 
