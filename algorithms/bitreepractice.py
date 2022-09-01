@@ -17,9 +17,9 @@ class Solution:
 def lca(nodeRoot, v1, v2):
     if(v1 < nodeRoot and v2 > nodeRoot) or (v2 < nodeRoot and v1 > nodeRoot):
         return Node.getLevel()
-    
+    return 0 # default return?
 
-
+# check how to write this node in python
 class Node:
     lvl = 0
     def __init__(self, value):
