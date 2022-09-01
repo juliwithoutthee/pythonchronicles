@@ -1,5 +1,5 @@
 # pointer to root of binary tree and two values v1 v2
-# return the lowest ancestor of v1 and v2 in binary search tree 
+# return the lowest common ancestor of v1 and v2 in binary search tree 
 # v1 v2 are int and exist in the tree 
 # Check for null? 
 # No duplicate numbers
