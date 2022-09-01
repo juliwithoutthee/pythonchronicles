@@ -12,6 +12,12 @@ class Solution:
         pass
 
 
+def lca(nodeRoot, v1, v2):
+    if(v1 < nodeRoot and v2 > nodeRoot) or (v2 < nodeRoot and v1 > nodeRoot):
+        return Node.getLevel()
+    
+
+
 class Node:
     lvl = 0
     def __init__(self, value):
