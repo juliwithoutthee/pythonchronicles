@@ -60,7 +60,8 @@ class Node:
 def lca(root, v1, v2):
   #Enter your code here
 
-    tree = BinarySearchTree()
+
+tree = BinarySearchTree()
 t = int(input())
 
 arr = list(map(int, input().split()))
