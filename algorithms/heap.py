@@ -5,3 +5,12 @@ H = [21,1,45,78,3,5]
 heapq.heapify(H)
 # Sorts the array through heapify
 print(H)
+
+
+# Given an array return the k-th smallest number 
+# Duplicates are possible 
+# n = len of array 
+# k <= n 
+
+def smallest_in_array(inputArray, k):
+    sortedArr = heapq.heapify(inputArray)
