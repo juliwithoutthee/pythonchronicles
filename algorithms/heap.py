@@ -12,5 +12,5 @@ print(H)
 # n = len of array 
 # k <= n 
 
-def smallest_in_array(inputArray, k):
+def k_smallest_in_array(inputArray, k):
     sortedArr = heapq.heapify(inputArray)
