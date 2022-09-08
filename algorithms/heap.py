@@ -15,7 +15,7 @@ print(H)
 def k_smallest_in_array(inputArray, k):
     sortedArr = heapq.heapify(inputArray)
     for i in range(1, k-1):
-        smallest = heapq.heappop(sortedArr)
+        smallest = heapq.heappop(sortedArr) #rewrite
     return smallest
 
 # sort the array 
