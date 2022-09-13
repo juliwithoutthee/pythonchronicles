@@ -1,6 +1,6 @@
 
 
-# Max Heap 
+# Using a max heap, sort any list
 # input visualization tree 
 #       5   
 #   16      8
