@@ -59,3 +59,10 @@ print(input)
 # Use min heap below
 test_list = [15, 8, 3, 7, 2, 5, 0, 4, 1, 20]
 test_output = [0, 1, 2, 3, 4, 5, 7, 8, 15, 20]
+
+def minheap(lst, parent_node):
+    pass
+
+
+def minheapsort():
+    pass
