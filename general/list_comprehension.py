@@ -31,7 +31,9 @@ remove_vowels = "".join([char for char in string if char not in ["a","e","i","o"
 print(remove_vowels)
 
 # Find all of the words in a string that are less than 5 letters (use string above)
-
+words = string.split(" ")
+less_than_five_letter_words = [word for word in words if len(word) < 5]
+print(less_than_five_letter_words)
 # Use a dictionary comprehension to count the length of each word in a sentence (use string above)
 
 # Use a nested list comprehension to find all of the numbers from 1–1000 that are divisible by any single digit besides 1 (2–9)
