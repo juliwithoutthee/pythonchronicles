@@ -27,6 +27,8 @@ number_of_spaces = len([char for char in string if char == " "])
 print(number_of_spaces)
 
 # Remove all of the vowels in a string (use string above)
+remove_vowels = "".join([char for char in string if char not in ["a","e","i","o","u"]])
+print(remove_vowels)
 
 # Find all of the words in a string that are less than 5 letters (use string above)
 
