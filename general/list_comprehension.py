@@ -15,6 +15,8 @@ nums = [i for i in range(1,1001)]
 test_string = "Practice Problems to Drill List Comprehension in Your Head."
 
 # Find numbers from 1-1000 that are divisible by 8
+divisible8 = [i for i in nums if i % 8 == 0 ]
+print(divisible8)
 
 # Find all of the numbers from 1–1000 that have a 6 in them
 
