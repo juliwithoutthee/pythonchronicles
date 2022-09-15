@@ -12,7 +12,7 @@ print(sloth_string)
 
 nums = [i for i in range(1,1001)]
 
-test_string = "Practice Problems to Drill List Comprehension in Your Head."
+string = "Practice Problems to Drill List Comprehension in Your Head."
 
 # Find numbers from 1-1000 that are divisible by 8
 divisible8 = [i for i in nums if i % 8 == 0 ]
@@ -23,6 +23,8 @@ has6 = [num for num in nums if "6" in str(num)]
 print(has6)
 
 # Count the number of spaces in a string (use string above)
+number_of_spaces = len([char for char in string if char == " "])
+print(number_of_spaces)
 
 # Remove all of the vowels in a string (use string above)
 
