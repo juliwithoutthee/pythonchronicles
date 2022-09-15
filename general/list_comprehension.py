@@ -43,3 +43,4 @@ print(word_dictionary)
 nested_list = [num for num in nums if True in [True for divisor in range(2,10) if num % divisor == 0]]
 
 # For all the numbers 1–1000, use a nested list/dictionary comprehension to find the highest single digit any of the numbers is divisible by
+nested_dictionary = {num:max([divisor for divisor in range(1,10) if num % divisor == 0]) for num in nums}
