@@ -19,6 +19,8 @@ divisible8 = [i for i in nums if i % 8 == 0 ]
 print(divisible8)
 
 # Find all of the numbers from 1–1000 that have a 6 in them
+has6 = [num for num in nums if "6" in str(num)]
+print(has6)
 
 # Count the number of spaces in a string (use string above)
 
