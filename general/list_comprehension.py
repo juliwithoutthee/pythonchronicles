@@ -34,7 +34,10 @@ print(remove_vowels)
 words = string.split(" ")
 less_than_five_letter_words = [word for word in words if len(word) < 5]
 print(less_than_five_letter_words)
+
 # Use a dictionary comprehension to count the length of each word in a sentence (use string above)
+word_dictionary = {word:len(word) for word in words}
+print(word_dictionary)
 
 # Use a nested list comprehension to find all of the numbers from 1–1000 that are divisible by any single digit besides 1 (2–9)
 
