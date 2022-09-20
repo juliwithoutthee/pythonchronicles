@@ -46,3 +46,14 @@ print(nested_list)
 # For all the numbers 1–1000, use a nested list/dictionary comprehension to find the highest single digit any of the numbers is divisible by
 nested_dictionary = {num:max([divisor for divisor in range(1,10) if num % divisor == 0]) for num in nums}
 print(nested_dictionary)
+
+
+
+# flatten matrix - flattening nested lists 
+matrix = [
+    [0, 0, 0],
+    [1, 1, 1],
+    [2, 2, 2],
+]
+
+flat = []
