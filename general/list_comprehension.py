@@ -58,3 +58,10 @@ matrix = [
 
 flat = [num for row in matrix for num in row]
 print(flat)
+
+flat2 = []
+for row in matrix:
+    for num in row: 
+        flat2.append(num)
+
+print(flat2)
