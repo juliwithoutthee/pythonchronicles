@@ -56,4 +56,5 @@ matrix = [
     [2, 2, 2],
 ]
 
-flat = []
+flat = [num for row in matrix for num in row]
+print(flat)
