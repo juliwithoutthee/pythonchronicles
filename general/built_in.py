@@ -13,4 +13,9 @@ boolean_list = ['False', 'True', 'False']
 result = any(boolean_list)
 
 
-#
+# all() returns True is all elements of an iterable is True
+bool_list = ['True', 'True', 'True']
+result2 = all(bool_list)
+
+
+# 
