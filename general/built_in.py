@@ -18,4 +18,6 @@ bool_list = ['True', 'True', 'True']
 result2 = all(bool_list)
 
 
-# 
+# bool() returns a boolean value for a specified argument
+print(bool(0))
+print(bool(1))
