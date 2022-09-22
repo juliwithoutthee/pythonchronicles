@@ -31,4 +31,14 @@ print(byte_array)
 # Output: bytearray(b'\x02\x03\x05\x07')
 
 
+# callable() returns true if the object passed appears callable
+x = 5
+print(callable(x))
+
+def testFunction():
+    print("Something Something Test")
+
+y = testFunction
+print(callable(y))
+
 
