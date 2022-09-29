@@ -57,3 +57,17 @@ Student.print_marks(88)
 # Output: Obtained Marks: 88
 
 
+# complex() takes two parameters real, imag and returns a complex num or str to complex num
+# A complex num has a real part and an imaginary part (A+Bi) or (A+Bj)
+z = complex(2, -3)
+print(z)
+
+z = complex(1)
+print(z)
+
+z = complex()
+print(z)
+
+z = complex('5-9j')
+print(z)
+
