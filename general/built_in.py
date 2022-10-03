@@ -71,3 +71,24 @@ print(z)
 z = complex('5-9j')
 print(z)
 
+
+# delattr(obj, name) deletes an attribute from the object 
+
+class Coordinate:
+  x = 15
+  y = -10
+  z = 0
+
+point1 = Coordinate() 
+
+print('x = ',point1.x)
+print('y = ',point1.y)
+print('z = ',point1.z)
+
+delattr(Coordinate, 'z')
+
+print('--After deleting z attribute--')
+print('x = ',point1.x)
+print('y = ',point1.y)
+
+
