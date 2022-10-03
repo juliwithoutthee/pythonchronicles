@@ -92,3 +92,7 @@ print('x = ',point1.x)
 print('y = ',point1.y)
 
 
+# dict(**kwarg) dict(mapping, **kwarg) dict(iterable, **kwarg) creates a dictionary
+new_dictionary = dict(x = 3, y = 100)
+print(new_dictionary)
+
