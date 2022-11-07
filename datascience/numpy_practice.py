@@ -24,6 +24,8 @@ print(ten_to_fifty)
 #       44, 45, 46, 47, 48, 49, 50])
 ten_to_fifty[ten_to_fifty%2 == 0] # array of even numbers from 10-50
 
+print(np.arange(10,51,2))
+
 # create the output array:  array([ 5.,  5.,  5.,  5.,  5.,  5.,  5.,  5.,  5.,  5.])
 arr_fives = np.ones(10) * 5
 print(arr_fives)
