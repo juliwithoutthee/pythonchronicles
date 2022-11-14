@@ -15,6 +15,8 @@ df['New'] = df['X'] + df['Y']  # Add new column to df
 
 print(df)
 
-df.drop('New',axis=1,inplace=True) # To drop a column use axis and inplace to specify
+df.drop('New',axis=1,inplace=True)  # To drop a column use axis and inplace to specify
 
 print(df)
+
+print(df[df['X']>0]['W'])  # Conditional Selection 
