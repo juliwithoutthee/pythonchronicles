@@ -20,3 +20,10 @@ df.drop('New',axis=1,inplace=True)  # To drop a column use axis and inplace to s
 print(df)
 
 print(df[df['X']>0]['W'])  # Conditional Selection 
+
+df1 = pd.DataFrame({'A':[1,2,np.nan],
+                  'B':[10,np.nan,np.nan],
+                  'C':[1,2,3]})
+
+print(df1.dropna())
+print(df1.fillna(value=df1.mean()))  # Fills nan with mean of each column
