@@ -40,9 +40,27 @@ def reverse_lst(lst):
         lst[start_index], lst[end_index] = lst[end_index], lst[start_index] 
         start_index = start_index + 1
         end_index = end_index - 1
-        
+
     return lst
 
 
 print(reverse_lst([1,2,3]))
 
+
+# Palindrome - check if the string is a palindrome 
+# input: racecar output: true  input:dog output: false 
+def is_palindrome(string):
+    start = 0
+    end = len(string)-1
+    # iterate and check if the values are the same in place 
+    
+    while start < end:
+        tracker = True
+        if (string[start] != string[end]):
+            tracker = False
+        start +=1 
+        end -= 1
+    return tracker
+
+
+print(is_palindrome("dog"))
