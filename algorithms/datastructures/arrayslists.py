@@ -45,22 +45,18 @@ def reverse_lst(lst):
 
 
 print(reverse_lst([1,2,3]))
+# print(reverse_lst("dog"))
 
 
 # Palindrome - check if the string is a palindrome 
 # input: racecar output: true  input:dog output: false 
 def is_palindrome(string):
-    start = 0
-    end = len(string)-1
-    # iterate and check if the values are the same in place 
+    if string == string[::-1]:
+        return True
     
-    while start < end:
-        tracker = True
-        if (string[start] != string[end]):
-            tracker = False
-        start +=1 
-        end -= 1
-    return tracker
+    return False
+    
 
 
 print(is_palindrome("dog"))
+print(is_palindrome("racecar"))
