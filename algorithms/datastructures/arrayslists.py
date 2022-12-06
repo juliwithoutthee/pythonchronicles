@@ -60,3 +60,21 @@ def is_palindrome(string):
 
 print(is_palindrome("dog"))
 print(is_palindrome("racecar"))
+
+def check_palindrome(s):
+    # iterate and check if the values are the same in place 
+    start = 0
+    end = len(s)-1
+    status = True
+    while start < end:
+            if(s[start] == s[end]):
+                start += 1
+                end -= 1
+            else: 
+                status = False
+                break
+    return status
+
+
+print(check_palindrome("yooo"))
+print(check_palindrome("dad"))
