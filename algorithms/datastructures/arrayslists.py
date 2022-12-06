@@ -13,7 +13,7 @@ for num in array:
     if num > max:
         max = num
 
-print(max)  # O(n) linear search
+# print(max)  # O(n) linear search
 
 min = array[0]
 
@@ -21,12 +21,12 @@ for num in array:
     if num < min:
         min = num
 
-print(min)  # O(n) linear search
+# print(min)  # O(n) linear search
 
 # Numpy allows for faster runtimes with a numpy array
 numpy_array = np.array(array)
 
-print(numpy_array)
+# print(numpy_array)
 
 
 # Reverse in Place (reverse list) O(n)
@@ -44,7 +44,7 @@ def reverse_lst(lst):
     return lst
 
 
-print(reverse_lst([1,2,3]))
+# print(reverse_lst([1,2,3]))
 # print(reverse_lst("dog"))
 
 
@@ -58,8 +58,8 @@ def is_palindrome(string):
     
 
 
-print(is_palindrome("dog"))
-print(is_palindrome("racecar"))
+# print(is_palindrome("dog"))
+# print(is_palindrome("racecar"))
 
 def check_palindrome(s):
     # iterate and check if the values are the same in place 
@@ -76,5 +76,5 @@ def check_palindrome(s):
     return status
 
 
-print(check_palindrome("yooo"))
-print(check_palindrome("dad"))
+# print(check_palindrome("yooo"))
+# print(check_palindrome("dad"))
