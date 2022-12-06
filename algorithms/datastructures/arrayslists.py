@@ -29,17 +29,20 @@ numpy_array = np.array(array)
 print(numpy_array)
 
 
-# Reverse Array in Place (reverse list)
+# Reverse in Place (reverse list) O(n)
 # input: [1,2,3] output: [3,2,1]
-def reverse_array(arr):
+def reverse_lst(lst):
     start_index = 0
-    end_index = len(arr) -1
+    end_index = len(lst) -1
 
     while start_index < end_index:
-        arr[start_index], arr[end_index] = arr[end_index], arr[start_index]
+        # swap items simultaneously 
+        lst[start_index], lst[end_index] = lst[end_index], lst[start_index] 
         start_index = start_index + 1
         end_index = end_index - 1
-    return arr
-    
+        
+    return lst
 
-print(reverse_array([1,2,3]))
+
+print(reverse_lst([1,2,3]))
+
