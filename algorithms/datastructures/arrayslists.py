@@ -84,7 +84,7 @@ def reverse_int(num):
     str_num = str(num) 
     return int(str_num[::-1])
 
-print(reverse_int(1234))
+# print(reverse_int(1234))
 
 def reverse_integer(n):
     reversed_int = 0
@@ -96,5 +96,23 @@ def reverse_integer(n):
         n = n // 10
     return reversed_int
 
+# print(reverse_integer(4321))
 
-print(reverse_integer(54321))
+
+# inputs : "restful" "fluster" output: true 
+# check if two strings are anagrams 
+def is_anagram(s1, s2):
+    # put amount of characters into dictionary and compare? 
+    if len(s1) != len(s2):
+        return False 
+    s1 = sorted(s1)
+    s2 = sorted(s2)
+
+    for i in range(len(s1)):
+        if s1[i] != s2[i]:
+            return False 
+
+    return True
+
+# print(is_anagram("restful", "fluster"))
+# print(is_anagram("dog", "cats"))
