@@ -78,3 +78,10 @@ def check_palindrome(s):
 
 # print(check_palindrome("yooo"))
 # print(check_palindrome("dad"))
+
+# input: 1234 output: 4321
+def reverse_int(num):
+    str_num = str(num) 
+    return int(str_num[::-1])
+
+print(reverse_int(1234))
