@@ -85,3 +85,16 @@ def reverse_int(num):
     return int(str_num[::-1])
 
 print(reverse_int(1234))
+
+def reverse_integer(n):
+    reversed_int = 0
+    remainder = 0 
+    
+    while n > 0:
+        remainder = n % 10 
+        reversed_int = reversed_int*10 + remainder
+        n = n // 10
+    return reversed_int
+
+
+print(reverse_integer(54321))
