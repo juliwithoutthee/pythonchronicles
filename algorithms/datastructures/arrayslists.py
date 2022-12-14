@@ -101,6 +101,7 @@ def reverse_integer(n):
 
 # inputs : "restful" "fluster" output: true 
 # check if two strings are anagrams 
+# logarithmic time complexity O(n log n)
 def is_anagram(s1, s2):
     # put amount of characters into dictionary and compare? 
     if len(s1) != len(s2):
@@ -116,3 +117,27 @@ def is_anagram(s1, s2):
 
 # print(is_anagram("restful", "fluster"))
 # print(is_anagram("dog", "cats"))
+
+# dutch flag sorting problem linear 
+def dutch_flag_problem(nums, pivot=1):
+    i = 0
+    j = 0
+    k = len(nums) - 1
+
+    while j <= k:
+        if nums[j] < pivot:
+            nums[i], nums[j] = nums[j], nums[i]
+            i += 1
+            j += 1
+        elif nums[j] > pivot: 
+            nums[j], nums[k] = nums[k], nums[j]
+            k -= 1
+        else: 
+            j += 1
+    return nums
+
+
+# def swap(lst, index1, index2):
+#     lst[index1], lst[index2] = lst[index2], lst[index1]
+#     return lst
+print(dutch_flag_problem([1,1,0,2]))
