@@ -141,3 +141,7 @@ def dutch_flag_problem(nums, pivot=1):
 #     lst[index1], lst[index2] = lst[index2], lst[index1]
 #     return lst
 print(dutch_flag_problem([1,1,0,2]))
+
+# example list comprehension for Garrett 
+arr1 = [0, 1, 2, 5, 6]
+arr_comp = [x*10 for x in arr1]
