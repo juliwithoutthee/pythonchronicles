@@ -22,13 +22,13 @@ evens = steps(2,10)
 # print(next(evens))
 
 
-# generator for steps in array 
+# generator for steps in list
 # input iterator and step through indecies to access values 
 
 def stepping_lists(lst, step):
     for i in range(0, len(lst), step):
-        yield lst[i]
-    yield lst[::step]
+        yield lst[i]  # returns element at step
+    yield lst[::step]  # returns final list
 
 a = [0,1,2,3,4,5,6]
 stepa = stepping_lists(a, 2) 
