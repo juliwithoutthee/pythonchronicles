@@ -1,12 +1,22 @@
 
 # can pause execution and start back later
-def odds(start, stop):
+def steps(start, stop):
     for i in range(start, stop + 1, 2):
         yield i
 
-g = odds(3,15)
+odds = steps(3,15)
 
-print(next(g))
-print(next(g))
-print(next(g))
+print(next(odds))
+print(next(odds))
+print(next(odds))
+print(next(odds))
+print(next(odds))
+print(next(odds))
+print(next(odds))
 
+evens = steps(2,10)
+print(next(evens))
+print(next(evens))
+print(next(evens))
+print(next(evens))
+print(next(evens))
