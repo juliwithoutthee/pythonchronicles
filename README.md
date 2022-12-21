@@ -21,3 +21,9 @@ Topics include
 * numpy
 * pandas
 * 
+
+## General Python Practice
+
+* Built-in Functions / Methods
+* List Comprehensions 
+* Generators 
