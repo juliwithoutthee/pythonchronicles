@@ -1,4 +1,3 @@
-from tracemalloc import start
 import numpy as np 
 
 
@@ -7,19 +6,19 @@ array = [10, 2, 8, 5, 101, 55]
 
 print(array[:-1])
 
-max = array[0]
+max_in_array = array[0]
 
 for num in array: 
-    if num > max:
-        max = num
+    if num > max_in_array:
+        max_in_array = num
 
-# print(max)  # O(n) linear search
+# print(max_in_array)  # O(n) linear search
 
-min = array[0]
+min_in_array = array[0]
 
 for num in array:
-    if num < min:
-        min = num
+    if num < min_in_array:
+        min_in_array = num
 
 # print(min)  # O(n) linear search
 
@@ -136,7 +135,7 @@ def dutch_flag_problem(nums, pivot=1):
             j += 1
     return nums
 
-
+# helper function swap for swapping indecies
 # def swap(lst, index1, index2):
 #     lst[index1], lst[index2] = lst[index2], lst[index1]
 #     return lst
@@ -145,3 +144,34 @@ print(dutch_flag_problem([1,1,0,2]))
 # example list comprehension for Garrett 
 arr1 = [0, 1, 2, 5, 6]
 arr_comp = [x*10 for x in arr1]
+
+
+# trap rain water problem 
+# input [4, 1, 3, 1, 5] output 7
+# input [2, 1, 3, 1, 4] output 3
+# if n > 3 no water can be trapped then result = 0 
+# find max height on left and right 
+def trapping_water(heights):
+    if len(heights) < 3: return 0
+
+    left_max = [0 for _ in range(len(heights))]
+    right_max = [0 for _ in range(len(heights))]
+
+    for i in range(1, len(heights)):
+        left_max[i] = max(left_max[i - 1], heights[i - 1])
+
+    for i in range(len(heights - 2), -1, -1):
+        right_max[i] = max(right_max[i + 1], heights[i + 1])
+
+    trapped = 0
+
+    for i in range(1, len(heights) - 1):
+        if min(left_max[i], right_max[i]) > heights[i]:
+            trapped += min(left_max[i], right_max[i]) - heights[i]
+    
+    return trapped
+
+
+print(trapping_water([4,1,3,1,5]), "output: 7")
+
+
