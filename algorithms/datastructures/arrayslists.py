@@ -160,7 +160,7 @@ def trapping_water(heights):
     for i in range(1, len(heights)):
         left_max[i] = max(left_max[i - 1], heights[i - 1])
 
-    for i in range(len(heights - 2), -1, -1):
+    for i in range(len(heights - 2), -1, -1): # error here
         right_max[i] = max(right_max[i + 1], heights[i + 1])
 
     trapped = 0
@@ -172,6 +172,6 @@ def trapping_water(heights):
     return trapped
 
 
-print(trapping_water([4,1,3,1,5]), "output: 7")
+# print(trapping_water([4,1,3,1,5]), "output: 7")
 
 
