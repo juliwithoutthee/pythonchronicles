@@ -1,16 +1,17 @@
 # Python Chronicles
 
+The hope is to eventually create a free guide for Python basics and other topics in Python. This will eventually include files for how to get started and instructions on each topic. 
 
-### Adventures in Learning Python
+### Adventures in Python
 
 ## Algorithm Practice 
 
 Data Structures and Algorithms can be found under the algorithms directory
 
-* binary tree 
-* heap (heap sorts)
-* linked list
-* arrays (Python lists)
+* Binary Tree 
+* Heap (heap sorts)
+* Linked List
+* Lists (and numpy arrays)
 
 ## Data Science and Data Analytics 
 
